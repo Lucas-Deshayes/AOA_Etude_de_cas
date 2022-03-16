@@ -45,4 +45,19 @@ void sgemm (int n, float a[n][n], float b[n][n], float c[n][n]) {
             c[i][j] += a[i][k] * b[k][j];
       }
 }
+
+/* original */
+void baseline(unsigned n, float x[n], const float y[n], const float z[n][n]) {
+   unsigned i, j;
+
+   for (j=0; j<n; j++) {
+      for(i=0; i<n; i++) {
+         x[i] += z[i][j] / y[i];
+      }
+   }
+}
+
 #endif
+
+
+
