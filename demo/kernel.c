@@ -34,7 +34,7 @@ void sgemm (int n, float a[n][n], float b[n][n], float c[n][n]) {
 #else
 
 /* original */
-void sgemm (int n, float a[n][n], float b[n][n], float c[n][n]) {
+/*void sgemm (int n, float a[n][n], float b[n][n], float c[n][n]) {
    int i, j, k;
 
    for (i=0; i<n; i++)
@@ -44,7 +44,7 @@ void sgemm (int n, float a[n][n], float b[n][n], float c[n][n]) {
          for (k=0; k<n; k++)
             c[i][j] += a[i][k] * b[k][j];
       }
-}
+}*/
 
 /* original */
 void baseline(unsigned n, float x[n], const float y[n], const float z[n][n]) {
@@ -58,6 +58,3 @@ void baseline(unsigned n, float x[n], const float y[n], const float z[n][n]) {
 }
 
 #endif
-
-
-
