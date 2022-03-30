@@ -1,7 +1,0 @@
-omp_in_final - :0
-libgomp.so.1.0.0
-GOMP_parallel - :0
-unknown kernel region
-kernel
-random - :0
-libc-2.31.so

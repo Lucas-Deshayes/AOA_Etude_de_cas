@@ -1,4 +1,0 @@
-loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
-2;nbody.g;move_particles;9;;Innermost;99.98;96.5;;;;;;
-3;nbody.g;move_particles;9;;Outermost;0.02;0.01;;;;;;
-1;nbody.g;init;8;;Single;0.01;0;;;;;;

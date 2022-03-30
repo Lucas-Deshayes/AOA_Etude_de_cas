@@ -1,3 +1,0 @@
-omp_in_final - :0
-libgomp.so.1.0.0
-GOMP_parallel - :0
