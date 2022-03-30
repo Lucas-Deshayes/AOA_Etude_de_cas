@@ -55,8 +55,7 @@ int main (int argc, char *argv[]) {
    // Nombre de repetition de la mesure
    int repm = atoi (argv[3]);
 
-    for (m=0; m<repw; m++) {
-        
+    for (i=0; i<NB_METAS; i++) {
         // Allocation pour les 2 tableaux et la matrice
         float (*x) = malloc (size * sizeof x[0]);
         float (*y) = malloc (size * sizeof y[0]);
@@ -68,13 +67,21 @@ int main (int argc, char *argv[]) {
         init_array (size, y);
         init_matrice(size,z);
 
+        for (m= 0; m < repw; m++)
+        {
+            baseline(size,x,y,z);
+        }
+
         // Mesure des repetitions
         uint64_t t1 = rdtsc();
-        baseline (size, x, y, z);
+        for (m = 0; m < repm; m++)
+        {
+            baseline (size, x, y, z);
+        }
         uint64_t t2 = rdtsc();
 
         // Affichage des performances
-        printf ("%.2f cycles\n",(double)(t2 - t1));
+        printf ("%.2f cycles\n",(double)(t2 - t1)/repm);
 
         // Libere l'espace memoire
         free (x);
