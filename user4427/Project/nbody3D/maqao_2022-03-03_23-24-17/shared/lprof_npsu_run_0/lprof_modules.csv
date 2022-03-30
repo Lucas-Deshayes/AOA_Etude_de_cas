@@ -1,0 +1,5 @@
+name;time_p;time_s;cpi_ratio;
+/users/user4427/Project/nbody3D/maqao_2022-03-03_23-24-17/binaries/nbody.g;97.65;0.92;;
+/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;1.6;0.02;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;0.64;0.01;;
+kernel;0.11;0;;

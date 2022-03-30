@@ -1,0 +1,1300 @@
+nbody.c:154:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:152:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:151:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:137:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:112:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:109:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:91:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:120:7: note: Considering inline candidate move_particles/40.
+nbody.c:120:7: missed:   will not early inline: main/41->move_particles/40, growth 65 exceeds --param early-inlining-insns
+nbody.c:105:3: note: Considering inline candidate init/39.
+nbody.c:105:3: missed:   will not early inline: main/41->init/39, growth 41 exceeds --param early-inlining-insns
+nbody.c:157:3: missed:   not inlinable: main/41 -> free/49, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/51, function body not available
+nbody.c:149:11: missed:   not inlinable: main/41 -> sqrt/48, function body not available
+nbody.c:144:7: missed:   not inlinable: main/41 -> fflush/46, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/51, function body not available
+nbody.c:122:23: missed:   not inlinable: main/41 -> omp_get_wtime/47, function body not available
+nbody.c:120:7: missed:   not inlinable: main/41 -> move_particles/40, --param max-inline-insns-auto limit reached
+nbody.c:118:25: missed:   not inlinable: main/41 -> omp_get_wtime/47, function body not available
+nbody.c:112:92: missed:   not inlinable: main/41 -> fflush/46, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/51, function body not available
+nbody.c:105:3: missed:   not inlinable: main/41 -> init/39, --param max-inline-insns-auto limit reached
+nbody.c:102:19: missed:   not inlinable: main/41 -> malloc/44, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/50, function body not available
+nbody.c:64:27: missed:   not inlinable: move_particles/40 -> pow/43, function body not available
+nbody.c:38:22: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:37:29: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:36:22: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:33:28: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:32:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:31:28: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:27:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:26:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+Unit growth for small function inlining: 222->222 (0%)
+
+Inlined 7 calls, eliminated 0 functions
+
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:23:3: missed: couldn't vectorize loop
+nbody.c:23:3: missed: not vectorized: control flow in loop.
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _2 = rand ();
+nbody.c:31:28: missed: statement clobbers memory: _3 = rand ();
+nbody.c:32:21: missed: statement clobbers memory: _9 = rand ();
+nbody.c:33:28: missed: statement clobbers memory: _12 = rand ();
+nbody.c:36:22: missed: statement clobbers memory: _16 = rand ();
+nbody.c:37:29: missed: statement clobbers memory: _19 = rand ();
+nbody.c:38:22: missed: statement clobbers memory: _23 = rand ();
+nbody.c:79:3: missed: couldn't vectorize loop
+nbody.c:81:14: missed: not vectorized: relevant stmt not supported: _34 = _33->x;
+nbody.c:49:3: missed: couldn't vectorize loop
+nbody.c:60:32: missed: not vectorized: relevant stmt not supported: _6 = _5->x;
+nbody.c:57:7: missed: couldn't vectorize loop
+nbody.c:60:23: missed: not vectorized: relevant stmt not supported: _3 = _2->x;
+nbody.c:43:6: note: vectorized 0 loops in function.
+nbody.c:49:3: note: ***** Re-trying analysis with vector size 16
+nbody.c:79:3: note: ***** Re-trying analysis with vector size 16
+nbody.c:118:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+nbody.c:115:3: missed: couldn't vectorize loop
+nbody.c:115:3: missed: not vectorized: control flow in loop.
+nbody.c:88:5: note: vectorized 0 loops in function.
+nbody.c:118:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _63 = strtoll (_1, 0B, 10);
+nbody.c:102:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:105:3: missed: statement clobbers memory: init (p_45, iftmp.1_37);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:112:92: missed: statement clobbers memory: fflush (stdout.2_5);
+nbody.c:118:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+nbody.c:120:7: missed: statement clobbers memory: move_particles (p_45, 9.99999977648258209228515625e-3, iftmp.1_37);
+nbody.c:122:23: missed: statement clobbers memory: end_56 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_83, _95, _96, _97, "");
+nbody.c:144:7: missed: statement clobbers memory: fflush (stdout.4_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_49, drate_50);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:157:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_83, _95, _96, _97, "*");
+nbody.c:144:7: missed: statement clobbers memory: fflush (stdout.4_79);
+nbody.c:156:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:154:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:153:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:139:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:114:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:111:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:93:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:122:7: note: Considering inline candidate move_particles/40.
+nbody.c:122:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:107:3: note: Considering inline candidate init/39.
+nbody.c:107:3: missed:   will not early inline: main/41->init/39, growth 41 exceeds --param early-inlining-insns
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/48, function body not available
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/48, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/44 -> __builtin_omp_get_thread_num/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/44 -> __builtin_omp_get_num_threads/45, function body not available
+nbody.c:65:27: missed:   not inlinable: move_particles._omp_fn.0/43 -> pow/47, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/43 -> __builtin_omp_get_thread_num/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/43 -> __builtin_omp_get_num_threads/45, function body not available
+nbody.c:159:3: missed:   not inlinable: main/41 -> free/54, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:151:11: missed:   not inlinable: main/41 -> sqrt/53, function body not available
+nbody.c:146:7: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:124:23: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:120:25: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:114:92: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:107:3: missed:   not inlinable: main/41 -> init/39, --param max-inline-insns-auto limit reached
+nbody.c:104:19: missed:   not inlinable: main/41 -> malloc/49, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/55, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/48, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/48, function body not available
+nbody.c:38:22: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:37:29: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:36:22: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:33:28: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:32:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:31:28: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:27:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:26:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:122:7: optimized:  Inlined move_particles.constprop/62 into main/41 which now has time 1569.378183 and size 115, net change of -7.
+Unit growth for small function inlining: 301->294 (-3%)
+
+Inlined 8 calls, eliminated 1 functions
+
+nbody.c:83:14: missed: couldn't vectorize loop
+nbody.c:83:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:79:11: note: vectorized 0 loops in function.
+nbody.c:85:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:85:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:61:29: missed: couldn't vectorize loop
+nbody.c:61:32: missed: not vectorized: relevant stmt not supported: _48 = *_47.x;
+nbody.c:58:7: missed: couldn't vectorize loop
+nbody.c:61:23: missed: not vectorized: relevant stmt not supported: _45 = *_44.x;
+nbody.c:49:11: note: vectorized 0 loops in function.
+nbody.c:76:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:76:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:23:3: missed: couldn't vectorize loop
+nbody.c:23:3: missed: not vectorized: control flow in loop.
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _2 = rand ();
+nbody.c:31:28: missed: statement clobbers memory: _3 = rand ();
+nbody.c:32:21: missed: statement clobbers memory: _9 = rand ();
+nbody.c:33:28: missed: statement clobbers memory: _12 = rand ();
+nbody.c:36:22: missed: statement clobbers memory: _16 = rand ();
+nbody.c:37:29: missed: statement clobbers memory: _19 = rand ();
+nbody.c:38:22: missed: statement clobbers memory: _23 = rand ();
+nbody.c:43:6: note: vectorized 0 loops in function.
+nbody.c:43:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.4, 10, 0);
+nbody.c:43:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.6, 10, 0);
+nbody.c:120:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+nbody.c:117:3: missed: couldn't vectorize loop
+nbody.c:117:3: missed: not vectorized: control flow in loop.
+nbody.c:90:5: note: vectorized 0 loops in function.
+nbody.c:120:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _63 = strtoll (_1, 0B, 10);
+nbody.c:104:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:107:3: missed: statement clobbers memory: init (p_45, iftmp.11_37);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:114:92: missed: statement clobbers memory: fflush (stdout.12_5);
+nbody.c:120:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+nbody.c:90:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.4, 10, 0);
+nbody.c:90:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.6, 10, 0);
+nbody.c:124:23: missed: statement clobbers memory: end_56 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_92, _104, _105, _106, "");
+nbody.c:146:7: missed: statement clobbers memory: fflush (stdout.14_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_49, drate_50);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:159:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_92, _104, _105, _106, "*");
+nbody.c:146:7: missed: statement clobbers memory: fflush (stdout.14_88);
+nbody.c:156:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:154:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:153:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:139:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:114:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:111:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:93:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:122:7: note: Considering inline candidate move_particles/40.
+nbody.c:122:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:107:3: note: Considering inline candidate init/39.
+nbody.c:107:3: missed:   will not early inline: main/41->init/39, growth 41 exceeds --param early-inlining-insns
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/48, function body not available
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/48, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/44 -> __builtin_omp_get_thread_num/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/44 -> __builtin_omp_get_num_threads/45, function body not available
+nbody.c:65:27: missed:   not inlinable: move_particles._omp_fn.0/43 -> pow/47, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/43 -> __builtin_omp_get_thread_num/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/43 -> __builtin_omp_get_num_threads/45, function body not available
+nbody.c:159:3: missed:   not inlinable: main/41 -> free/54, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:151:11: missed:   not inlinable: main/41 -> sqrt/53, function body not available
+nbody.c:146:7: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:124:23: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:120:25: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:114:92: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:107:3: missed:   not inlinable: main/41 -> init/39, --param max-inline-insns-auto limit reached
+nbody.c:104:19: missed:   not inlinable: main/41 -> malloc/49, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/55, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/48, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/48, function body not available
+nbody.c:38:22: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:37:29: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:36:22: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:33:28: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:32:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:31:28: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:27:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:26:21: missed:   not inlinable: init/39 -> rand/42, function body not available
+nbody.c:122:7: optimized:  Inlined move_particles.constprop/62 into main/41 which now has time 1569.378183 and size 115, net change of -7.
+Unit growth for small function inlining: 302->295 (-3%)
+
+Inlined 8 calls, eliminated 1 functions
+
+nbody.c:83:14: missed: couldn't vectorize loop
+nbody.c:83:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:79:11: note: vectorized 0 loops in function.
+nbody.c:85:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:85:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:61:29: missed: couldn't vectorize loop
+nbody.c:61:32: missed: not vectorized: relevant stmt not supported: _48 = *_47.x;
+nbody.c:58:7: missed: couldn't vectorize loop
+nbody.c:61:23: missed: not vectorized: relevant stmt not supported: _45 = *_44.x;
+nbody.c:49:11: note: vectorized 0 loops in function.
+nbody.c:76:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:76:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:23:3: missed: couldn't vectorize loop
+nbody.c:23:3: missed: not vectorized: control flow in loop.
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:26:21: missed: statement clobbers memory: _1 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _2 = rand ();
+nbody.c:31:28: missed: statement clobbers memory: _3 = rand ();
+nbody.c:32:21: missed: statement clobbers memory: _9 = rand ();
+nbody.c:33:28: missed: statement clobbers memory: _12 = rand ();
+nbody.c:36:22: missed: statement clobbers memory: _16 = rand ();
+nbody.c:37:29: missed: statement clobbers memory: _19 = rand ();
+nbody.c:38:22: missed: statement clobbers memory: _23 = rand ();
+nbody.c:43:6: note: vectorized 0 loops in function.
+nbody.c:43:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.4, 10, 0);
+nbody.c:43:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.6, 10, 0);
+nbody.c:120:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+nbody.c:117:3: missed: couldn't vectorize loop
+nbody.c:117:3: missed: not vectorized: control flow in loop.
+nbody.c:90:5: note: vectorized 0 loops in function.
+nbody.c:120:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _63 = strtoll (_1, 0B, 10);
+nbody.c:104:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:107:3: missed: statement clobbers memory: init (p_45, iftmp.11_37);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:114:92: missed: statement clobbers memory: fflush (stdout.12_5);
+nbody.c:120:25: missed: statement clobbers memory: start_53 = omp_get_wtime ();
+nbody.c:90:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.4, 10, 0);
+nbody.c:90:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.6, 10, 0);
+nbody.c:124:23: missed: statement clobbers memory: end_56 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_92, _104, _105, _106, "");
+nbody.c:146:7: missed: statement clobbers memory: fflush (stdout.14_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_49, drate_50);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:159:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_92, _104, _105, _106, "*");
+nbody.c:146:7: missed: statement clobbers memory: fflush (stdout.14_88);
+nbody.c:157:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:155:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:154:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:140:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:115:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:112:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:94:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:123:7: note: Considering inline candidate move_particles/40.
+nbody.c:123:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:108:3: note: Considering inline candidate init/39.
+nbody.c:108:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:66:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:39:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:38:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:37:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:33:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:32:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:28:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:27:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:160:3: missed:   not inlinable: main/41 -> free/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:152:11: missed:   not inlinable: main/41 -> sqrt/54, function body not available
+nbody.c:147:7: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:125:23: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:121:25: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:115:92: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:105:19: missed:   not inlinable: main/41 -> malloc/50, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/56, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:123:7: optimized:  Inlined move_particles.constprop/64 into main/41 which now has time 1573.378183 and size 119, net change of -7.
+Unit growth for small function inlining: 334->327 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: couldn't vectorize loop
+nbody.c:27:21: missed: not vectorized: control flow in loop.
+nbody.c:23:11: note: vectorized 0 loops in function.
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:28:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:32:28: missed: statement clobbers memory: _28 = rand ();
+nbody.c:33:21: missed: statement clobbers memory: _36 = rand ();
+nbody.c:34:28: missed: statement clobbers memory: _41 = rand ();
+nbody.c:37:22: missed: statement clobbers memory: _47 = rand ();
+nbody.c:38:29: missed: statement clobbers memory: _52 = rand ();
+nbody.c:39:22: missed: statement clobbers memory: _58 = rand ();
+nbody.c:84:14: missed: couldn't vectorize loop
+nbody.c:84:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:80:11: note: vectorized 0 loops in function.
+nbody.c:86:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:86:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:62:29: missed: couldn't vectorize loop
+nbody.c:62:32: missed: not vectorized: relevant stmt not supported: _48 = *_47.x;
+nbody.c:59:7: missed: couldn't vectorize loop
+nbody.c:62:23: missed: not vectorized: relevant stmt not supported: _45 = *_44.x;
+nbody.c:50:11: note: vectorized 0 loops in function.
+nbody.c:77:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:77:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:21:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:44:6: note: vectorized 0 loops in function.
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:121:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:118:3: missed: couldn't vectorize loop
+nbody.c:118:3: missed: not vectorized: control flow in loop.
+nbody.c:91:5: note: vectorized 0 loops in function.
+nbody.c:121:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _62 = strtoll (_1, 0B, 10);
+nbody.c:105:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:91:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:115:92: missed: statement clobbers memory: fflush (stdout.17_5);
+nbody.c:121:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:91:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:91:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:125:23: missed: statement clobbers memory: end_55 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "");
+nbody.c:147:7: missed: statement clobbers memory: fflush (stdout.19_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_48, drate_49);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:160:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "*");
+nbody.c:147:7: missed: statement clobbers memory: fflush (stdout.19_91);
+nbody.c:157:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:155:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:154:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:140:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:115:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:112:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:94:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:123:7: note: Considering inline candidate move_particles/40.
+nbody.c:123:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:108:3: note: Considering inline candidate init/39.
+nbody.c:108:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:66:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:39:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:38:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:37:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:33:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:32:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:28:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:27:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:160:3: missed:   not inlinable: main/41 -> free/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:152:11: missed:   not inlinable: main/41 -> sqrt/54, function body not available
+nbody.c:147:7: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:125:23: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:121:25: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:115:92: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:105:19: missed:   not inlinable: main/41 -> malloc/50, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/56, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:123:7: optimized:  Inlined move_particles.constprop/64 into main/41 which now has time 1573.378183 and size 119, net change of -7.
+Unit growth for small function inlining: 334->327 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: couldn't vectorize loop
+nbody.c:27:21: missed: not vectorized: control flow in loop.
+nbody.c:23:11: note: vectorized 0 loops in function.
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:28:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:32:28: missed: statement clobbers memory: _28 = rand ();
+nbody.c:33:21: missed: statement clobbers memory: _36 = rand ();
+nbody.c:34:28: missed: statement clobbers memory: _41 = rand ();
+nbody.c:37:22: missed: statement clobbers memory: _47 = rand ();
+nbody.c:38:29: missed: statement clobbers memory: _52 = rand ();
+nbody.c:39:22: missed: statement clobbers memory: _58 = rand ();
+nbody.c:84:14: missed: couldn't vectorize loop
+nbody.c:84:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:80:11: note: vectorized 0 loops in function.
+nbody.c:86:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:86:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:62:29: missed: couldn't vectorize loop
+nbody.c:62:32: missed: not vectorized: relevant stmt not supported: _48 = *_47.x;
+nbody.c:59:7: missed: couldn't vectorize loop
+nbody.c:62:23: missed: not vectorized: relevant stmt not supported: _45 = *_44.x;
+nbody.c:50:11: note: vectorized 0 loops in function.
+nbody.c:77:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:77:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:21:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:44:6: note: vectorized 0 loops in function.
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:121:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:118:3: missed: couldn't vectorize loop
+nbody.c:118:3: missed: not vectorized: control flow in loop.
+nbody.c:91:5: note: vectorized 0 loops in function.
+nbody.c:121:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _62 = strtoll (_1, 0B, 10);
+nbody.c:105:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:91:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:115:92: missed: statement clobbers memory: fflush (stdout.17_5);
+nbody.c:121:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:91:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:91:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:125:23: missed: statement clobbers memory: end_55 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "");
+nbody.c:147:7: missed: statement clobbers memory: fflush (stdout.19_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_48, drate_49);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:160:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "*");
+nbody.c:147:7: missed: statement clobbers memory: fflush (stdout.19_91);
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:156:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:155:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:141:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:116:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:113:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:95:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:124:7: note: Considering inline candidate move_particles/40.
+nbody.c:124:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:109:3: note: Considering inline candidate init/39.
+nbody.c:109:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/65 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/65 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.2/49 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.2/49 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:67:27: missed:   not inlinable: move_particles._omp_fn.1/48 -> pow/50, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:39:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:38:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:37:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:33:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:32:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:28:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:27:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:161:3: missed:   not inlinable: main/41 -> free/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/58, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/58, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/58, function body not available
+nbody.c:153:11: missed:   not inlinable: main/41 -> sqrt/55, function body not available
+nbody.c:148:7: missed:   not inlinable: main/41 -> fflush/53, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/58, function body not available
+nbody.c:126:23: missed:   not inlinable: main/41 -> omp_get_wtime/54, function body not available
+nbody.c:122:25: missed:   not inlinable: main/41 -> omp_get_wtime/54, function body not available
+nbody.c:116:92: missed:   not inlinable: main/41 -> fflush/53, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/58, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/58, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:106:19: missed:   not inlinable: main/41 -> malloc/51, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/57, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:124:7: optimized:  Inlined move_particles.constprop/65 into main/41 which now has time 1573.378183 and size 119, net change of -7.
+Unit growth for small function inlining: 376->369 (-2%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: couldn't vectorize loop
+nbody.c:27:21: missed: not vectorized: control flow in loop.
+nbody.c:23:11: note: vectorized 0 loops in function.
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:28:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:32:28: missed: statement clobbers memory: _28 = rand ();
+nbody.c:33:21: missed: statement clobbers memory: _36 = rand ();
+nbody.c:34:28: missed: statement clobbers memory: _41 = rand ();
+nbody.c:37:22: missed: statement clobbers memory: _47 = rand ();
+nbody.c:38:29: missed: statement clobbers memory: _52 = rand ();
+nbody.c:39:22: missed: statement clobbers memory: _58 = rand ();
+nbody.c:58:10: missed: couldn't vectorize loop
+nbody.c:50:11: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.10, 10, 0);
+nbody.c:50:11: note: vectorized 0 loops in function.
+nbody.c:50:11: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.10, 10, 0);
+nbody.c:50:11: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.10, 10, 0);
+nbody.c:58:10: note: ***** Re-trying analysis with vector size 32
+nbody.c:50:11: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.10, 10, 0);
+nbody.c:58:10: note: ***** Re-trying analysis with vector size 16
+nbody.c:50:11: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.10, 10, 0);
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:85:14: missed: couldn't vectorize loop
+nbody.c:85:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:81:11: note: vectorized 0 loops in function.
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:63:20: missed: couldn't vectorize loop
+nbody.c:63:23: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:58:10: note: vectorized 0 loops in function.
+nbody.c:72:7: note: ***** Re-trying analysis with vector size 32
+nbody.c:72:7: note: ***** Re-trying analysis with vector size 16
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:21:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:44:6: note: vectorized 0 loops in function.
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.12, 10, 0);
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.2, &.omp_data_o.14, 10, 0);
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:119:3: missed: couldn't vectorize loop
+nbody.c:119:3: missed: not vectorized: control flow in loop.
+nbody.c:92:5: note: vectorized 0 loops in function.
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _62 = strtoll (_1, 0B, 10);
+nbody.c:106:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:116:92: missed: statement clobbers memory: fflush (stdout.22_5);
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.12, 10, 0);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.2, &.omp_data_o.14, 10, 0);
+nbody.c:126:23: missed: statement clobbers memory: end_55 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.24_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_48, drate_49);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:161:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "*");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.24_91);
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:156:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:155:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:141:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:116:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:113:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:95:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:124:7: note: Considering inline candidate move_particles/40.
+nbody.c:124:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:109:3: note: Considering inline candidate init/39.
+nbody.c:109:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:67:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:39:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:38:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:37:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:33:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:32:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:28:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:27:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:161:3: missed:   not inlinable: main/41 -> free/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:153:11: missed:   not inlinable: main/41 -> sqrt/54, function body not available
+nbody.c:148:7: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:126:23: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:122:25: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:116:92: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:106:19: missed:   not inlinable: main/41 -> malloc/50, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/56, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:124:7: optimized:  Inlined move_particles.constprop/64 into main/41 which now has time 1573.378183 and size 119, net change of -7.
+Unit growth for small function inlining: 334->327 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: couldn't vectorize loop
+nbody.c:27:21: missed: not vectorized: control flow in loop.
+nbody.c:23:11: note: vectorized 0 loops in function.
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:28:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:32:28: missed: statement clobbers memory: _28 = rand ();
+nbody.c:33:21: missed: statement clobbers memory: _36 = rand ();
+nbody.c:34:28: missed: statement clobbers memory: _41 = rand ();
+nbody.c:37:22: missed: statement clobbers memory: _47 = rand ();
+nbody.c:38:29: missed: statement clobbers memory: _52 = rand ();
+nbody.c:39:22: missed: statement clobbers memory: _58 = rand ();
+nbody.c:85:14: missed: couldn't vectorize loop
+nbody.c:85:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:81:11: note: vectorized 0 loops in function.
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:63:29: missed: couldn't vectorize loop
+nbody.c:63:32: missed: not vectorized: relevant stmt not supported: _48 = *_47.x;
+nbody.c:60:7: missed: couldn't vectorize loop
+nbody.c:63:23: missed: not vectorized: relevant stmt not supported: _45 = *_44.x;
+nbody.c:50:11: note: vectorized 0 loops in function.
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:21:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:44:6: note: vectorized 0 loops in function.
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:119:3: missed: couldn't vectorize loop
+nbody.c:119:3: missed: not vectorized: control flow in loop.
+nbody.c:92:5: note: vectorized 0 loops in function.
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _62 = strtoll (_1, 0B, 10);
+nbody.c:106:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:116:92: missed: statement clobbers memory: fflush (stdout.17_5);
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:126:23: missed: statement clobbers memory: end_55 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.19_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_48, drate_49);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:161:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "*");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.19_91);
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:156:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:155:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:141:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:116:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:113:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:95:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:124:7: note: Considering inline candidate move_particles/40.
+nbody.c:124:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:109:3: note: Considering inline candidate init/39.
+nbody.c:109:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:67:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:39:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:38:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:37:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:33:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:32:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:28:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:27:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:161:3: missed:   not inlinable: main/41 -> free/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:153:11: missed:   not inlinable: main/41 -> sqrt/54, function body not available
+nbody.c:148:7: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:126:23: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:122:25: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:116:92: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:106:19: missed:   not inlinable: main/41 -> malloc/50, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/56, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:124:7: optimized:  Inlined move_particles.constprop/64 into main/41 which now has time 1573.378183 and size 119, net change of -7.
+Unit growth for small function inlining: 334->327 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: couldn't vectorize loop
+nbody.c:27:21: missed: not vectorized: control flow in loop.
+nbody.c:23:11: note: vectorized 0 loops in function.
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:28:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:32:28: missed: statement clobbers memory: _28 = rand ();
+nbody.c:33:21: missed: statement clobbers memory: _36 = rand ();
+nbody.c:34:28: missed: statement clobbers memory: _41 = rand ();
+nbody.c:37:22: missed: statement clobbers memory: _47 = rand ();
+nbody.c:38:29: missed: statement clobbers memory: _52 = rand ();
+nbody.c:39:22: missed: statement clobbers memory: _58 = rand ();
+nbody.c:85:14: missed: couldn't vectorize loop
+nbody.c:85:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:81:11: note: vectorized 0 loops in function.
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:63:29: missed: couldn't vectorize loop
+nbody.c:63:32: missed: not vectorized: relevant stmt not supported: _48 = *_47.x;
+nbody.c:60:7: missed: couldn't vectorize loop
+nbody.c:63:23: missed: not vectorized: relevant stmt not supported: _45 = *_44.x;
+nbody.c:50:11: note: vectorized 0 loops in function.
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:21:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:44:6: note: vectorized 0 loops in function.
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:119:3: missed: couldn't vectorize loop
+nbody.c:119:3: missed: not vectorized: control flow in loop.
+nbody.c:92:5: note: vectorized 0 loops in function.
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _62 = strtoll (_1, 0B, 10);
+nbody.c:106:19: missed: statement clobbers memory: p_45 = malloc (_2);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:116:92: missed: statement clobbers memory: fflush (stdout.17_5);
+nbody.c:122:25: missed: statement clobbers memory: start_52 = omp_get_wtime ();
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:126:23: missed: statement clobbers memory: end_55 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.19_28);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", rate_48, drate_49);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:161:3: missed: statement clobbers memory: free (p_45);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_95, _107, _108, _109, "*");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.19_91);
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:156:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:155:2: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:141:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:116:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:113:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:95:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:124:7: note: Considering inline candidate move_particles/40.
+nbody.c:124:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:109:3: note: Considering inline candidate init/39.
+nbody.c:109:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/64 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:67:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:39:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:38:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:37:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:33:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:32:28: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:28:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:27:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:161:3: missed:   not inlinable: main/41 -> free/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:153:9: missed:   not inlinable: main/41 -> __builtin_sqrtf/54, function body not available
+nbody.c:148:7: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+nbody.c:126:23: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:122:25: missed:   not inlinable: main/41 -> omp_get_wtime/53, function body not available
+nbody.c:116:92: missed:   not inlinable: main/41 -> fflush/52, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/57, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:106:19: missed:   not inlinable: main/41 -> malloc/50, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/56, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:124:7: optimized:  Inlined move_particles.constprop/64 into main/41 which now has time 1573.378183 and size 119, net change of -7.
+Unit growth for small function inlining: 334->327 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: couldn't vectorize loop
+nbody.c:27:21: missed: not vectorized: control flow in loop.
+nbody.c:23:11: note: vectorized 0 loops in function.
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:27:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:28:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:32:28: missed: statement clobbers memory: _28 = rand ();
+nbody.c:33:21: missed: statement clobbers memory: _36 = rand ();
+nbody.c:34:28: missed: statement clobbers memory: _41 = rand ();
+nbody.c:37:22: missed: statement clobbers memory: _47 = rand ();
+nbody.c:38:29: missed: statement clobbers memory: _52 = rand ();
+nbody.c:39:22: missed: statement clobbers memory: _58 = rand ();
+nbody.c:85:14: missed: couldn't vectorize loop
+nbody.c:85:14: missed: not vectorized: relevant stmt not supported: _23 = *_22.x;
+nbody.c:81:11: note: vectorized 0 loops in function.
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 32
+nbody.c:87:14: note: ***** Re-trying analysis with vector size 16
+nbody.c:63:29: missed: couldn't vectorize loop
+nbody.c:63:32: missed: not vectorized: relevant stmt not supported: _48 = *_47.x;
+nbody.c:60:7: missed: couldn't vectorize loop
+nbody.c:63:23: missed: not vectorized: relevant stmt not supported: _45 = *_44.x;
+nbody.c:50:11: note: vectorized 0 loops in function.
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 32
+nbody.c:78:15: note: ***** Re-trying analysis with vector size 16
+nbody.c:21:6: note: vectorized 0 loops in function.
+nbody.c:21:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:44:6: note: vectorized 0 loops in function.
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:44:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:122:25: missed: statement clobbers memory: start_58 = omp_get_wtime ();
+nbody.c:119:3: missed: couldn't vectorize loop
+nbody.c:119:3: missed: not vectorized: control flow in loop.
+nbody.c:92:5: note: vectorized 0 loops in function.
+nbody.c:122:25: missed: statement clobbers memory: start_58 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _68 = strtoll (_1, 0B, 10);
+nbody.c:106:19: missed: statement clobbers memory: p_51 = malloc (_2);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", _2, _4, _3);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:116:92: missed: statement clobbers memory: fflush (stdout.17_5);
+nbody.c:122:25: missed: statement clobbers memory: start_58 = omp_get_wtime ();
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:92:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:126:23: missed: statement clobbers memory: end_61 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_101, _119, _120, _121, "");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.19_32);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", _37, _36);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:161:3: missed: statement clobbers memory: free (p_51);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_101, _119, _120, _121, "*");
+nbody.c:148:7: missed: statement clobbers memory: fflush (stdout.19_97);
+nbody.c:160:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:157:2: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:143:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:118:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:115:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:97:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:126:7: note: Considering inline candidate move_particles/40.
+nbody.c:126:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:111:3: note: Considering inline candidate init/39.
+nbody.c:111:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/63 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/63 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:69:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:41:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:40:30: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:39:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:36:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:35:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:30:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:29:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:163:3: missed:   not inlinable: main/41 -> free/54, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:155:9: missed:   not inlinable: main/41 -> __builtin_sqrtf/53, function body not available
+nbody.c:150:7: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+nbody.c:128:23: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:124:25: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:118:92: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/56, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/55, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:126:7: optimized:  Inlined move_particles.constprop/63 into main/41 which now has time 1561.378183 and size 116, net change of -7.
+Unit growth for small function inlining: 321->314 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: couldn't vectorize loop
+nbody.c:29:21: missed: not vectorized: control flow in loop.
+nbody.c:25:11: note: vectorized 0 loops in function.
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:30:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:34:29: missed: statement clobbers memory: _28 = rand ();
+nbody.c:35:22: missed: statement clobbers memory: _34 = rand ();
+nbody.c:36:29: missed: statement clobbers memory: _39 = rand ();
+nbody.c:39:23: missed: statement clobbers memory: _45 = rand ();
+nbody.c:40:30: missed: statement clobbers memory: _50 = rand ();
+nbody.c:41:23: missed: statement clobbers memory: _56 = rand ();
+nbody.c:87:15: optimized: loop vectorized using 64 byte vectors
+nbody.c:83:11: note: vectorized 1 loops in function.
+nbody.c:83:11: optimized: loop with 14 iterations completely unrolled (header execution count 19496943)
+nbody.c:65:33: optimized: loop vectorized using 64 byte vectors
+nbody.c:62:7: missed: couldn't vectorize loop
+nbody.c:62:7: missed: outer-loop already vectorized.
+nbody.c:52:11: note: vectorized 1 loops in function.
+nbody.c:23:6: note: vectorized 0 loops in function.
+nbody.c:23:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:46:6: note: vectorized 0 loops in function.
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:124:25: missed: statement clobbers memory: start_57 = omp_get_wtime ();
+nbody.c:121:3: missed: couldn't vectorize loop
+nbody.c:121:3: missed: not vectorized: control flow in loop.
+nbody.c:94:5: note: vectorized 0 loops in function.
+nbody.c:124:25: missed: statement clobbers memory: start_57 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _67 = strtoll (_1, 0B, 10);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", s_51, _3, _2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:118:92: missed: statement clobbers memory: fflush (stdout.17_4);
+nbody.c:124:25: missed: statement clobbers memory: start_57 = omp_get_wtime ();
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:128:23: missed: statement clobbers memory: end_60 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_100, _118, _119, _120, "");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_32);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", _37, _36);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.c:163:3: missed: statement clobbers memory: free (p_50(D));
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_100, _118, _119, _120, "*");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_96);
+nbody.c:160:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:157:2: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:143:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:118:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:115:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:97:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:126:7: note: Considering inline candidate move_particles/40.
+nbody.c:126:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:111:3: note: Considering inline candidate init/39.
+nbody.c:111:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:69:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:41:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:40:30: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:39:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:36:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:35:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:30:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:29:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+nbody.c:155:9: missed:   not inlinable: main/41 -> __builtin_sqrtf/53, function body not available
+nbody.c:150:7: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+nbody.c:128:23: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:124:25: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:118:92: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/54, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:126:7: optimized:  Inlined move_particles.constprop/62 into main/41 which now has time 1550.378183 and size 114, net change of -7.
+Unit growth for small function inlining: 319->312 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: couldn't vectorize loop
+nbody.c:29:21: missed: not vectorized: control flow in loop.
+nbody.c:25:11: note: vectorized 0 loops in function.
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:30:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:34:29: missed: statement clobbers memory: _28 = rand ();
+nbody.c:35:22: missed: statement clobbers memory: _34 = rand ();
+nbody.c:36:29: missed: statement clobbers memory: _39 = rand ();
+nbody.c:39:23: missed: statement clobbers memory: _45 = rand ();
+nbody.c:40:30: missed: statement clobbers memory: _50 = rand ();
+nbody.c:41:23: missed: statement clobbers memory: _56 = rand ();
+nbody.c:87:15: optimized: loop vectorized using 64 byte vectors
+nbody.c:83:11: note: vectorized 1 loops in function.
+nbody.c:83:11: optimized: loop with 14 iterations completely unrolled (header execution count 19496943)
+nbody.c:65:33: optimized: loop vectorized using 64 byte vectors
+nbody.c:62:7: missed: couldn't vectorize loop
+nbody.c:62:7: missed: outer-loop already vectorized.
+nbody.c:52:11: note: vectorized 1 loops in function.
+nbody.c:23:6: note: vectorized 0 loops in function.
+nbody.c:23:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:46:6: note: vectorized 0 loops in function.
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+nbody.c:121:3: missed: couldn't vectorize loop
+nbody.c:121:3: missed: not vectorized: control flow in loop.
+nbody.c:94:5: note: vectorized 0 loops in function.
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _66 = strtoll (_1, 0B, 10);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", s_50, _3, _2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:118:92: missed: statement clobbers memory: fflush (stdout.17_4);
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:128:23: missed: statement clobbers memory: end_59 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_99, _117, _118, _119, "");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_32);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", _37, _36);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_99, _117, _118, _119, "*");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_95);
+nbody.c:160:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:157:2: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:143:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:118:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:115:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:97:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:126:7: note: Considering inline candidate move_particles/40.
+nbody.c:126:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:111:3: note: Considering inline candidate init/39.
+nbody.c:111:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:78:27: missed:   not inlinable: move_particles._omp_fn.1/48 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:41:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:40:30: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:39:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:36:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:35:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:30:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:29:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+nbody.c:155:9: missed:   not inlinable: main/41 -> __builtin_sqrtf/53, function body not available
+nbody.c:150:7: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+nbody.c:128:23: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:124:25: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:118:92: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/54, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:126:7: optimized:  Inlined move_particles.constprop/62 into main/41 which now has time 1550.378183 and size 114, net change of -7.
+Unit growth for small function inlining: 319->312 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: couldn't vectorize loop
+nbody.c:29:21: missed: not vectorized: control flow in loop.
+nbody.c:25:11: note: vectorized 0 loops in function.
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:30:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:34:29: missed: statement clobbers memory: _28 = rand ();
+nbody.c:35:22: missed: statement clobbers memory: _34 = rand ();
+nbody.c:36:29: missed: statement clobbers memory: _39 = rand ();
+nbody.c:39:23: missed: statement clobbers memory: _45 = rand ();
+nbody.c:40:30: missed: statement clobbers memory: _50 = rand ();
+nbody.c:41:23: missed: statement clobbers memory: _56 = rand ();
+nbody.c:55:13: optimized: loop vectorized using 64 byte vectors
+nbody.c:51:11: note: vectorized 1 loops in function.
+nbody.c:51:11: optimized: loop with 14 iterations completely unrolled (header execution count 19496943)
+nbody.c:74:33: optimized: loop vectorized using 64 byte vectors
+nbody.c:71:7: missed: couldn't vectorize loop
+nbody.c:71:7: missed: outer-loop already vectorized.
+nbody.c:61:11: note: vectorized 1 loops in function.
+nbody.c:23:6: note: vectorized 0 loops in function.
+nbody.c:23:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:46:6: note: vectorized 0 loops in function.
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+nbody.c:121:3: missed: couldn't vectorize loop
+nbody.c:121:3: missed: not vectorized: control flow in loop.
+nbody.c:94:5: note: vectorized 0 loops in function.
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _66 = strtoll (_1, 0B, 10);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", s_50, _3, _2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:118:92: missed: statement clobbers memory: fflush (stdout.17_4);
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:128:23: missed: statement clobbers memory: end_59 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_99, _117, _118, _119, "");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_32);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", _37, _36);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_99, _117, _118, _119, "*");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_95);
+nbody.c:160:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:158:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:157:2: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:143:7: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:118:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:115:3: optimized:   Inlining printf/15 into main/41 (always_inline).
+nbody.c:97:30: optimized:   Inlining atoll/25 into main/41 (always_inline).
+nbody.c:126:7: note: Considering inline candidate move_particles/40.
+nbody.c:126:7: missed:   will not early inline: main/41->move_particles/40, growth 12 exceeds --param early-inlining-insns divided by number of calls
+nbody.c:111:3: note: Considering inline candidate init/39.
+nbody.c:111:3: optimized:  Inlining init/39 into main/41.
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles.constprop/62 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.1/48 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:69:27: missed:   not inlinable: move_particles._omp_fn.0/47 -> pow/49, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: move_particles._omp_fn.0/47 -> __builtin_omp_get_num_threads/43, function body not available
+nbody.c:41:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:40:30: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:39:23: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:36:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:35:22: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:34:29: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:30:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+nbody.c:29:21: missed:   not inlinable: init._omp_fn.0/42 -> rand/45, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_thread_num/44, function body not available
+missed:   not inlinable: init._omp_fn.0/42 -> __builtin_omp_get_num_threads/43, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+nbody.c:155:9: missed:   not inlinable: main/41 -> __builtin_sqrtf/53, function body not available
+nbody.c:150:7: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+nbody.c:128:23: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:124:25: missed:   not inlinable: main/41 -> omp_get_wtime/52, function body not available
+nbody.c:118:92: missed:   not inlinable: main/41 -> fflush/51, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed:   not inlinable: main/41 -> __printf_chk/55, function body not available
+missed:   not inlinable: main/41 -> __builtin_GOMP_parallel/46, function body not available
+/usr/include/stdlib.h:375:10: missed:   not inlinable: main/41 -> strtoll/54, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: move_particles/40 -> __builtin_GOMP_parallel/46, function body not available
+missed:   not inlinable: init/39 -> __builtin_GOMP_parallel/46, function body not available
+nbody.c:126:7: optimized:  Inlined move_particles.constprop/62 into main/41 which now has time 1550.378183 and size 114, net change of -7.
+Unit growth for small function inlining: 319->312 (-3%)
+
+Inlined 9 calls, eliminated 1 functions
+
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: couldn't vectorize loop
+nbody.c:29:21: missed: not vectorized: control flow in loop.
+nbody.c:25:11: note: vectorized 0 loops in function.
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:29:21: missed: statement clobbers memory: _22 = rand ();
+nbody.c:30:21: missed: statement clobbers memory: _25 = rand ();
+nbody.c:34:29: missed: statement clobbers memory: _28 = rand ();
+nbody.c:35:22: missed: statement clobbers memory: _34 = rand ();
+nbody.c:36:29: missed: statement clobbers memory: _39 = rand ();
+nbody.c:39:23: missed: statement clobbers memory: _45 = rand ();
+nbody.c:40:30: missed: statement clobbers memory: _50 = rand ();
+nbody.c:41:23: missed: statement clobbers memory: _56 = rand ();
+nbody.c:86:13: optimized: loop vectorized using 64 byte vectors
+nbody.c:82:17: note: vectorized 1 loops in function.
+nbody.c:82:17: optimized: loop with 14 iterations completely unrolled (header execution count 19496943)
+nbody.c:65:33: optimized: loop vectorized using 64 byte vectors
+nbody.c:62:7: missed: couldn't vectorize loop
+nbody.c:62:7: missed: outer-loop already vectorized.
+nbody.c:52:11: note: vectorized 1 loops in function.
+nbody.c:23:6: note: vectorized 0 loops in function.
+nbody.c:23:6: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+nbody.c:46:6: note: vectorized 0 loops in function.
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:46:6: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+nbody.c:121:3: missed: couldn't vectorize loop
+nbody.c:121:3: missed: not vectorized: control flow in loop.
+nbody.c:94:5: note: vectorized 0 loops in function.
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+/usr/include/stdlib.h:375:10: missed: statement clobbers memory: _66 = strtoll (_1, 0B, 10);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (init._omp_fn.0, &.omp_data_o.3, 10, 0);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\n\x1b[1mTotal memory size:\x1b[0m %llu B, %llu KiB, %llu MiB\n\n", s_50, _3, _2);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.c:118:92: missed: statement clobbers memory: fflush (stdout.17_4);
+nbody.c:124:25: missed: statement clobbers memory: start_56 = omp_get_wtime ();
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.0, &.omp_data_o.9, 10, 0);
+nbody.c:94:5: missed: statement clobbers memory: __builtin_GOMP_parallel (move_particles._omp_fn.1, &.omp_data_o.11, 10, 0);
+nbody.c:128:23: missed: statement clobbers memory: end_59 = omp_get_wtime ();
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_99, _117, _118, _119, "");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_32);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "\x1b[1m%s %4s \x1b[42m%10.1lf +- %.1lf GFLOP/s\x1b[0m\n", "Average performance:", "", _37, _36);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:107:10: missed: statement clobbers memory: __printf_chk (1, "%5llu %10.3e %10.3e %8.1f %s\n", i_99, _117, _118, _119, "*");
+nbody.c:150:7: missed: statement clobbers memory: fflush (stdout.19_95);

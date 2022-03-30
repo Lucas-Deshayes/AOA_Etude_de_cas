@@ -1,0 +1,9 @@
+********************************************************************************
+
+MAQAO 2.15.0 - b1544c69c095a29fedd570ae9a5f2917b3fb35a8::20211209-173719 || 2021/12/09
+
+maqao oneview -R1 --output-format=all --executable=./nbody.g 5000 
+
+CMD:   /opt/maqao/maqao.intel64.2.15.0/bin/maqao lprof  --xp="/users/user4427/nbody3D/maqao_2022-03-03_22-10-21/tools/lprof_npsu_run_0" --mpi-command=""   -- /users/user4427/nbody3D/maqao_2022-03-03_22-10-21/binaries/nbody.g
+###   ERROR 2   ###
+
