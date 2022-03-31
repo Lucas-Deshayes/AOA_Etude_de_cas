@@ -55,46 +55,42 @@ int main (int argc, char *argv[]) {
    // Nombre de repetition de la mesure
    int repm = atoi (argv[3]);
 
-   for (int indice = 1 ; indice < repw; indice++ )
-   {
+   for (m=0; m<NB_METAS; m++) {
+      
+      // Allocation pour les 2 tableaux et la matrice
+      float (*x) = malloc (size * sizeof x[0]);
+      float (*y) = malloc (size * sizeof y[0]);
+      float (*z)[size] = malloc (size * size * sizeof z[0][0]);
 
-      for (m=0; m<NB_METAS; m++) {
-         
-         // Allocation pour les 2 tableaux et la matrice
-         float (*x) = malloc (size * sizeof x[0]);
-         float (*y) = malloc (size * sizeof y[0]);
-         float (*z)[size] = malloc (size * size * sizeof z[0][0]);
+      // Initialisation des tableaux et de la matrice
+      srand(0);
+      init_array (size, x);
+      init_array (size, y);
+      init_matrice(size,z);
 
-         // Initialisation des tableaux et de la matrice
-         srand(0);
-         init_array (size, x);
-         init_array (size, y);
-         init_matrice(size,z);
-
-         // Warmup
-         if (m == 0) {
-            for (i=0; i<indice; i++){
-               baseline (size, x, y, z);
-            }
-         } else {
+      // Warmup
+      if (m == 0) {
+         for (i=0; i<repw; i++){
             baseline (size, x, y, z);
          }
-
-         // Mesure des repetitions
-         uint64_t t1 = rdtsc();
-         for (i=0; i<repm; i++){
-            baseline (size, x, y, z);
-         }   
-         uint64_t t2 = rdtsc();
-
-         // Affichage des performances
-         printf ("%.2f cycles/FMA\n",(t2 - t1) / ((float) size * size * size * repm));
-
-         // Libere l'espace memoire
-         free (x);
-         free (y);
-         free (z);
+      } else {
+         baseline (size, x, y, z);
       }
+
+      // Mesure des repetitions
+      uint64_t t1 = rdtsc();
+      for (i=0; i<repm; i++){
+         baseline (size, x, y, z);
+      }   
+      uint64_t t2 = rdtsc();
+
+      // Affichage des performances
+      printf ("%.2f cycles/FMA\n",(t2 - t1) / ((float) size * size * size * repm));
+
+      // Libere l'espace memoire
+      free (x);
+      free (y);
+      free (z);
    }
    return EXIT_SUCCESS;
 }
