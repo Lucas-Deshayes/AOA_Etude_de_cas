@@ -1,0 +1,57 @@
+
+* Info: Selecting the 'perf-low-ppn' engine for node knl07
+
+* Info: Process launched (host knl07, process 203166)7.54 cycles/innermost loop iter
+6.13 cycles/innermost loop iter
+7.50 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.07 cycles/innermost loop iter
+7.50 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.51 cycles/innermost loop iter
+6.06 cycles/innermost loop iter
+7.49 cycles/innermost loop iter
+
+* Info: Process finished (host knl07, process 203166)
+* Info: Dumping samples (host knl07, process 203166)
+* Info: Dumping source info for callchain nodes (host knl07, process 203166)
+* Info: Building/writing metadata (host knl07)
+* Info: Finished collect step (host knl07, process 203166)
+
+Your experiment path is /users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0
+
+To display your profiling results:
+##################################################################################################################################################
+#    LEVEL    |     REPORT     |                                                     COMMAND                                                     #
+##################################################################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_13-37-25/tools/lprof_npsu_run_0  #
+##################################################################################################################################################
+
