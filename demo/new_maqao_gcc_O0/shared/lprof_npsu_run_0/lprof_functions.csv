@@ -1,5 +1,0 @@
-function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
-10;sgemm;baseline;;99.63;6.65;6.65;6.65;6.65;0;1;"100,0,0,0,0,0,0,0,0,0";
-232;libc-2.31.so;random;;0.15;0.01;0.01;0.01;0.01;0;1;"0,0,0,0,0,0,0,0,0,100";
-6;sgemm;init_matrice;;0.15;0.01;0.01;0.01;0.01;0;1;"100,0,0,0,0,0,0,0,0,0";
-236;libc-2.31.so;random_r;;0.07;0;0;0;0;0;1;"0,0,0,0,0,0,0,0,0,100";

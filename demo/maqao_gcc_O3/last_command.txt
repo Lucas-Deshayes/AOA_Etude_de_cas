@@ -1,1 +1,0 @@
-maqao oneview --create-report=one uarch=KNIGHTS_MILL binary=sgemm run_command=./sgemm 600 600 600 

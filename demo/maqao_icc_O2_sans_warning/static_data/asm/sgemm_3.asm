@@ -1,9 +1,0 @@
-address;source_location;insn;indent
-0x401396;:0;CALL	401180 <rand@plt>;
-0x40139b;:0;PXOR	%XMM0,%XMM0;
-0x40139f;:0;CVTSI2SS	%EAX,%XMM0;
-0x4013a3;:0;MULSS	0x2c59(%RIP),%XMM0;
-0x4013ab;:0;MOVSS	%XMM0,(%R12,%R15,4);
-0x4013b1;:0;INC	%R15;
-0x4013b4;:0;CMP	%R14,%R15;
-0x4013b7;:0;JL	401396 <main+0x106>;

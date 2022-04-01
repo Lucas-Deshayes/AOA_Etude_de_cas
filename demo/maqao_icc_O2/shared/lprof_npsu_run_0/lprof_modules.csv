@@ -1,4 +1,0 @@
-name;time_p;time_s;cpi_ratio;
-/users/user4427/AOA_Etude_de_cas/demo/maqao_2022-04-01_08-52-38/binaries/sgemm;99.43;94.68;;
-/usr/lib/x86_64-linux-gnu/libc-2.31.so;0.53;0.5;;
-kernel;0.04;0.04;;
