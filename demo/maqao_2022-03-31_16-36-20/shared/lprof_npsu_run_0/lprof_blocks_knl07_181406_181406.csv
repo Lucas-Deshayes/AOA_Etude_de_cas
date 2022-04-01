@@ -1,7 +1,0 @@
-block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
-81;sgemm;;99.14;95.44;;;;;;
-25;sgemm;;0.19;0.18;;;;;;
-82;sgemm;;0.06;0.05;;;;;;
-35;sgemm;;0.03;0.03;;;;;;
-80;sgemm;;0.03;0.03;;;;;;
-24;sgemm;;0.01;0.01;;;;;;
