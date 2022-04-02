@@ -1,0 +1,5 @@
+Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
+_ALL;_ALL;_ALL;0.05;99.13;0;2186;0;0.82;0;0;0;10.93;0;0;
+lucasPc;_ALL;_ALL;0.05;99.13;0;2186;0;0.82;0;0;0;10.93;0;0;
+lucasPc;29414;_ALL;0.05;99.13;0;2186;0;0.82;0;0;0;10.93;0;0;
+lucasPc;29414;29414;0.05;99.13;0;2186;0;0.82;0;0;0;10.93;0;0;

@@ -1,0 +1,6 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+10;sgemm;baseline;kernel.c:50-58;98.89;11.09;11.09;11.09;11.09;0;1;"100,0,0,0,0,0,0,0,0,0";
+6;sgemm;init_matrice;;0.4;0.05;0.04;0.04;0.04;0;1;"100,0,0,0,0,0,0,0,0,0";
+236;libc-2.31.so;random_r;;0.36;0.04;0.04;0.04;0.04;0;1;"0,0,0,0,0,0,0,0,0,100";
+232;libc-2.31.so;random;;0.22;0.03;0.03;0.03;0.03;0;1;"0,0,0,0,0,0,0,0,0,100";
+237;libc-2.31.so;rand;;0.13;0.02;0.02;0.02;0.02;0;1;"0,0,0,0,0,0,0,0,0,100";

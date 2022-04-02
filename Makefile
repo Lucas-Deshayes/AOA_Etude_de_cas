@@ -1,5 +1,5 @@
 CC=gcc
-OPTFLAGS=-O3 -g -Wall
+OPTFLAGS=-O3 -fno-omit-frame-pointer -g -Wall
 OBJS=driver.o kernel.o rdtsc.o
 
 all:	sgemm

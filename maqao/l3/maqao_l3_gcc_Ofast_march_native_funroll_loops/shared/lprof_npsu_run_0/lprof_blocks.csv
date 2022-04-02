@@ -1,0 +1,8 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+102;sgemm;kernel.c:54-55;95.54;9.85;9.85;9.85;9.85;0;1;
+105;sgemm;kernel.c:54-55;1.65;0.17;0.17;0.17;0.17;0;1;
+106;sgemm;kernel.c:54-55;0.78;0.08;0.08;0.08;0.08;0;1;
+99;sgemm;kernel.c:50-54;0.44;0.04;0.04;0.04;0.04;0;1;
+33;sgemm;;0.39;0.04;0.04;0.04;0.04;0;1;
+98;sgemm;kernel.c:54-54;0.24;0.02;0.02;0.02;0.02;0;1;
+96;sgemm;kernel.c:54-54;0.1;0.01;0.01;0.01;0.01;0;1;
