@@ -1,0 +1,9 @@
+/users/user4427/AOA_Etude_de_cas/kernel.c: 50 - 55
+--------------------------------------------------------------------------------
+
+50: void baseline(unsigned n, float x[n], const float y[n], const float z[n][n]) {
+51:    unsigned i, j;
+52: 
+53:    for (j=0; j<n; j++) {
+54:       for(i=0; i<n; i++) {
+55:          x[i] += z[i][j] / y[i];

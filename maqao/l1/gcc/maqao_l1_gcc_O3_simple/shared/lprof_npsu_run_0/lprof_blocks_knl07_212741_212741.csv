@@ -1,0 +1,12 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+100;sgemm;kernel.c:54-55;89.44;10.58;;;;;;
+103;sgemm;kernel.c:54-55;6.84;0.81;;;;;;
+101;sgemm;kernel.c:54-54;1.94;0.23;;;;;;
+98;sgemm;kernel.c:50-54;0.8;0.09;;;;;;
+96;sgemm;kernel.c:54-54;0.21;0.02;;;;;;
+102;sgemm;kernel.c:53-53;0.17;0.02;;;;;;
+95;sgemm;kernel.c:50-55;0.13;0.01;;;;;;
+99;sgemm;kernel.c:50-50;0.13;0.01;;;;;;
+106;sgemm;kernel.c:58-58;0.08;0.01;;;;;;
+73;sgemm;;0.04;0;;;;;;
+33;sgemm;;0.04;0;;;;;;
