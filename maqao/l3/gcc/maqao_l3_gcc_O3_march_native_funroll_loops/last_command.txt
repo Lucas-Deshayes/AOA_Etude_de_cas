@@ -1,0 +1,1 @@
+./maqao oneview g --create-report=one uarch=KABY_LAKE executable=AOA_Etude_de_cas/./sgemm run_command=<executable> 626 30 1000 

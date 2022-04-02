@@ -1,0 +1,6 @@
+loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+3;sgemm;baseline;7;kernel.c:54-55;Innermost;95.23;11.69;11.69;11.69;11.69;0;1;
+4;sgemm;baseline;7;kernel.c:54-55;Innermost;2.36;0.29;0.29;0.29;0.29;0;1;
+0;sgemm;baseline;7;kernel.c:53-55;Outermost;0.9;0.11;0.11;0.11;0.11;0;1;
+2;sgemm;baseline;7;kernel.c:54-55;Innermost;0.49;0.06;0.06;0.06;0.06;0;1;
+10;sgemm;main;8;driver_mesure.c:16-17;Innermost;0.37;0.05;0.04;0.04;0.04;0;1;

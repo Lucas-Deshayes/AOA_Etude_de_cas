@@ -1,0 +1,3 @@
+name;time_p;time_s;cpi_ratio;
+/home/lucas/AOA/maqao_2022-04-02_18-12-49/binaries/sgemm;99.47;12.2;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;0.53;0.06;;
