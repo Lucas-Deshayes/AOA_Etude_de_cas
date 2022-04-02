@@ -1,0 +1,4 @@
+loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+8;sgemm;baseline;7;kernel.c:54-55;Innermost;74.02;4.36;4.36;4.36;4.36;0;1;
+5;sgemm;main;6;;Innermost;7.72;0.45;0.45;0.45;0.45;0;1;
+7;sgemm;baseline;7;kernel.c:53-55;Outermost;0.25;0.01;0.01;0.01;0.01;0;1;

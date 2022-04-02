@@ -1,0 +1,9 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+10;sgemm;baseline;kernel.c:50-58;68.49;4.13;;;;;;"100,0,0,0,0,0,0,0,0,0";
+6;sgemm;init_matrice;;13.35;0.8;;;;;;"100,0,0,0,0,0,0,0,0,0";
+236;libc-2.31.so;random_r;;8.96;0.54;;;;;;"0,0,0,0,0,0,0,0,0,100";
+232;libc-2.31.so;random;;6.05;0.37;;;;;;"0,0,0,0,0,0,0,0,0,100";
+237;libc-2.31.so;rand;;2.24;0.13;;;;;;"0,0,0,0,0,0,0,0,0,100";
+0;sgemm;Unknown function;;0.58;0.04;;;;;;"100,0,0,0,0,0,0,0,0,0";
+16;sgemm;.plt.sec@start;;0.25;0.01;;;;;;"0,0,0,0,100,0,0,0,0,0";
+7;sgemm;init_array;;0.08;0;;;;;;"100,0,0,0,0,0,0,0,0,0";
