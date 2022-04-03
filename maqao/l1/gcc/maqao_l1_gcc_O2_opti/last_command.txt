@@ -1,1 +1,0 @@
-maqao oneview -g --create-report=one uarch=KNIGHTS_MILL executable=./sgemm run_command=<executable> 89 50 10000 

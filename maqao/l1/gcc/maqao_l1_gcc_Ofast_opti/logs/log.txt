@@ -1,7 +1,0 @@
-********************************************************************************
-
-MAQAO 2.15.5 - 0b66882c33fcd95ef103e22d5fec6c0d2ff1b5e2::20220328-144625 || 2022/03/28
-
-maqao oneview -g --create-report=one uarch=KNIGHTS_MILL executable=./sgemm run_command=<executable> 89 50 10000 
-
-CMD:   /opt/other/maqao/2.15.5/bin/maqao lprof  --xp="/users/user4427/AOA_Etude_de_cas/maqao_2022-04-02_17-21-32/tools/lprof_npsu_run_0" --mpi-command=""   -- /users/user4427/AOA_Etude_de_cas/maqao_2022-04-02_17-21-32/binaries/sgemm 89 50 10000
