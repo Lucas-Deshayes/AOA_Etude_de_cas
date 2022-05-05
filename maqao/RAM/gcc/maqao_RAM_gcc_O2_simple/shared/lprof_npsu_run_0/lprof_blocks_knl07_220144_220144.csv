@@ -1,6 +1,0 @@
-block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
-97;sgemm;kernel.c:54-55;69.67;4.36;;;;;;
-33;sgemm;;12.13;0.76;;;;;;
-31;sgemm;;0.64;0.04;;;;;;
-32;sgemm;;0.32;0.02;;;;;;
-30;sgemm;;0.24;0.01;;;;;;

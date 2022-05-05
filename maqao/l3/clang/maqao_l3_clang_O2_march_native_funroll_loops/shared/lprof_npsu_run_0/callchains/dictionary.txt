@@ -1,4 +1,0 @@
-main - /home/lucas/AOA/AOA_Etude_de_cas/driver_mesure.c:80
-sgemm
-__libc_start_main - :0
-libc-2.31.so

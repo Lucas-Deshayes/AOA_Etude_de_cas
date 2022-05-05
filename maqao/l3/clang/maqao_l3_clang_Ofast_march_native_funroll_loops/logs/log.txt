@@ -1,7 +1,0 @@
-********************************************************************************
-
-MAQAO 2.15.4 - 84488770a3a712c2e67a76f9f2d2f12c03f25264::20220324-173157 || 2022/03/24
-
-./maqao oneview g --create-report=one uarch=KABY_LAKE executable=AOA_Etude_de_cas/./sgemm run_command=<executable> 626 30 1000 
-
-CMD:   /home/lucas/AOA/./maqao lprof  --xp="/home/lucas/AOA/maqao_2022-04-02_18-03-33/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/lucas/AOA/maqao_2022-04-02_18-03-33/binaries/sgemm 626 30 1000

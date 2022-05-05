@@ -1,5 +1,0 @@
-Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
-_ALL;_ALL;_ALL;0;83.4;0;1313;0;16.6;0;0;0;6.56;0;0;
-knl07;_ALL;_ALL;0;83.4;0;1313;0;16.6;0;0;0;6.56;0;0;
-knl07;222494;_ALL;0;83.4;0;1313;0;16.6;0;0;0;6.56;0;0;
-knl07;222494;222494;0;83.4;0;1313;0;16.6;0;0;0;6.56;0;0;

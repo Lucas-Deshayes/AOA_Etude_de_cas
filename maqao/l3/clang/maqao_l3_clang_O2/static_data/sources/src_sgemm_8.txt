@@ -1,5 +1,0 @@
-/home/lucas/AOA/AOA_Etude_de_cas/driver_mesure.c: 16 - 17
---------------------------------------------------------------------------------
-
-16:       for (j=0; j<n; j++) {
-17:          a[i][j] = (float) rand() / RAND_MAX;
