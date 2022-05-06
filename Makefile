@@ -65,6 +65,9 @@ print:
 sujet2:	$(OBJS)
 	$(CC) -o $@ $^
 
+sujet2_para:	$(OBJS)
+	$(CC) -fopenmp -o $@ $^
+
 maqao_gcc: maqao_o2 maqao_o2_opti maqao_o3 maqao_o3_opti maqao_of maqao_of_opti
 
 maqao_icc: maqao_icc_o2 maqao_icc_o2_opti maqao_icc_o3 maqao_icc_o3_opti maqao_icc_of maqao_icc_of_opti
